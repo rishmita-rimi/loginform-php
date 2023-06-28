@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <div class="form-container">
+        <form action="connect.php" method="post">
+          <div class="input-name">
+            <i class="fa fa-user lock"></i>
+            <input type="text" placeholder="First Name" class="name" name="firstName" />
+            <span>
+              <i class="fa fa-user lock"></i>
+              <input type="text" placeholder="Last Name" class="name"  name="lastName"/>
+            </span>
+          </div>
+        
+          <div class="input-name">
+            <i class="fa fa-envelope email lock"></i>
+            <input type="email" placeholder="E-mail" class="text-name" name="email"/>
+          </div>
+
+          <div class="input-name">
+            <i class="fa fa-lock lock"></i>
+            <input type="password" placeholder="Password" class="text-name" name="password"/>
+          </div>
+
+          <div class="input-name">
+            <i class="fa fa-lock lock"></i>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              class="text-name" name="confirmPassword"
+            />
+          </div>
+
+          <div class="input-name">
+            <i class="fa fa-page"></i>
+            <input type="age" placeholder="Enter your age" class="text-name" name="age"/>
+          </div>
+
+          <div class="input-name">
+            <i class="fa fa-calendar lock"></i>
+            <input
+              type="Date of birth"
+              placeholder="Enter your Date of birth"
+              class="text-name" name="dateofbirth"
+            />
+          </div>
+
+          <div class="input-name">
+            <input type="radio" class="radio-button" name="gender"  value="m"/>
+            <label>Male</label>
+            <input type="radio" class="radio-button" name="gender" value="f"/>
+            <label>Female</label>
+            <input type="radio" class="radio-button" name="gender" value="o"/>
+            <label>Others</label>
+          </div>
+
+          <div class="input-name">
+            <i class="fa-user fa-address lock"></i>
+            <input
+              type="address"
+              placeholder="Enter Your address "
+              class="text-name" name="address"
+            />
+          </div>
+
+          <div class="input-name">
+            <select class="country" name="country">
+              <option>Select a country</option>
+              <option>India</option>
+              <option>Outside India</option>
+            </select>
+            <div class="arrow"></div>
+          </div>
+
+          <div class="input-name">
+            <input type="checkbox" class="check-button" />
+            <label> I accept all terms and conditions</label>
+          </div>
+          <div class="input-name">
+            <input type="submit" class="button" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
